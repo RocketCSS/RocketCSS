@@ -1,0 +1,478 @@
+/*!
+ * RocketCSS - CSS Stylesheet
+ * Licensed under The MIT License (MIT) 
+ * http://rocketcss.com/license.txt
+ */
+
+/* Buttons (btn) */
+
+[class^="btn"] {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid #ccc;
+	background-color: #ddd;
+	height: 30px;
+	color: #fff;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.btn {
+	color: #777 !important;
+	}
+
+.btn:hover {
+	background-color: #e7e6e6;
+	border-bottom: 2px solid #dcdada;
+}
+
+.btn:active {
+	background-color: #d3d3d3;
+	border-bottom: 2px solid #b8b8b8;
+}
+
+/* btn-blue */
+
+.btn--blue {
+	background-color: #00acee;
+	border-bottom: 2px solid #32a1d1;
+}
+
+.btn--blue:hover {
+	background-color: #3ebff1;
+	border-bottom: 2px solid #3fb4e6;
+}
+
+.btn--blue:active {
+	background-color: #0290c7;
+	border-bottom: 2px solid #037ead;
+}
+
+/* btn-orange */
+
+.btn--orange {
+	background-color: #faa226;
+	border-bottom: 2px solid #e19324;
+}
+
+.btn--orange:hover {
+	background-color: #f6ac44;
+	border-bottom: 2px solid #f1ab47;
+}
+
+.btn--orange:active {
+	background-color: #e29324;
+	border-bottom: 2px solid #c6811f;
+}
+
+/* btn-red */
+
+.btn--red {
+	background-color: #d53d2c;
+	border-bottom: 2px solid #ba3526;
+}
+
+.btn--red:hover {
+	background-color: #d55344;
+	border-bottom: 2px solid #b8473a;
+}
+
+.btn--red:active {
+	background-color: #be3727;
+	border-bottom: 2px solid #9f2e22;
+}
+
+/* btn-green */
+
+.btn--green {
+	background-color: #3dbb38;
+	border-bottom: 2px solid #329e2e;
+}
+
+.btn--green:hover {
+	background-color: #5bba57;
+	border-bottom: 2px solid #3fac3b;
+}
+
+.btn--green:active {
+	background-color: #309e2c;
+	border-bottom: 2px solid #248721;
+}
+
+/* btn-black */
+
+.btn--black {
+	background-color: #303030;
+	border-bottom: 2px solid #181818;
+}
+
+.btn--black:hover {
+	background-color: #424141;
+	border-bottom: 2px solid #333333;
+}
+
+.btn--black:active {
+	background-color: #202020;
+	border-bottom: 2px solid #0e0e0e;
+}
+	
+.large {
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 25px;
+}
+
+/* Icons */
+
+[class^="icon-white-"] {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(http://rocketcss.com/imgs/icon-white.png) no-repeat;
+	margin-top: 1px;
+	vertical-align: text-top;
+}
+
+.icon-white-search {
+	background-position: -7px -7px;
+}
+
+.icon-white-document {
+	background-position: -36px -7px;
+}
+
+.icon-white-download {
+	background-position: -123px -7px;
+}
+
+.icon-white-tick {
+	background-position: -65px -7px;
+}
+
+.icon-white-cross {
+	background-position: -94px -7px;
+}
+
+.icon-white-profile {
+	background-position: -152px -7px;
+}
+
+.icon-white-plus {
+	background-position: -181px -7px;
+}
+
+.icon-white-minus {
+	background-position: -210px -7px;
+}
+
+[class^="icon-black-"] {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(http://rocketcss.com/imgs/icon-black.png) no-repeat;
+	margin-top: 1px;
+	vertical-align: text-top;
+}
+
+.icon-black-search {
+	background-position: -7px -7px;
+}
+
+.icon-black-document {
+	background-position: -36px -7px;
+}
+
+.icon-black-tick {
+	background-position: -65px -7px;
+}
+
+.icon-black-cross {
+	background-position: -94px -7px;
+}
+
+/* Forms and Inputs */
+
+[class^="input"] {
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	height: 19px;
+	padding: 5px;
+}
+	
+[class^="input"]:focus {
+	outline: none;
+	-moz-box-shadow: 0px 0px 3px #09C;
+	-webkit-box-shadow: 0px 0px 3px #09C;
+	box-shadow: 0px 0px 3px #09C;
+}
+
+[class^="input"] {
+	font-family: Arial, Helvetica, sans-serif;
+      -webkit-transition: .2s ease-in-out all;
+      -moz-transition: .2s ease-in-out all;
+      -ms-transition: .2s ease-in-out all;
+      -o-transition: .2s ease-in-out all;
+      transition: .2s ease-in-out all;
+	border-radius: 2px;
+}
+	
+button {
+	font-family: Arial, Helvetica, sans-serif;
+      -webkit-transition: .2s ease-in-out all;
+      -moz-transition: .2s ease-in-out all;
+      -ms-transition: .2s ease-in-out all;
+      -o-transition: .2s ease-in-out all;
+      transition: .2s ease-in-out all;
+	border-radius: 2px;
+	outline: none;
+}
+
+[class^="input"]:focus {
+	outline: none;
+}
+
+.input--interactive {
+	width: 150px;
+}
+.input--interactive:focus {
+	width: 200px;
+}
+
+.input--success {
+	border: 1px solid #92c690;
+}
+
+.input--warning {
+	border: 1px solid #f8bf6e;
+}
+
+.input--error {
+	border: 1px solid #ed8a7e;
+}
+
+.input--success:focus {
+	-moz-box-shadow: 0px 0px 3px #069d00 !important;
+	-webkit-box-shadow: 0px 0px 3px #069d00 !important;
+	box-shadow: 0px 0px 3px #069d00 !important;
+}
+
+.input--warning:focus {
+	-moz-box-shadow: 0px 0px 3px #e19324 !important;
+	-webkit-box-shadow: 0px 0px 3px #e19324 !important;
+	box-shadow: 0px 0px 3px #e19324 !important;
+}
+
+.input--error:focus {
+	-moz-box-shadow: 0px 0px 3px #ba3526 !important;
+	-webkit-box-shadow: 0px 0px 3px #ba3526 !important;
+	box-shadow: 0px 0px 3px #ba3526 !important;
+}
+
+.input--vertical {
+	display: list-item;
+	margin: 10px 0;
+}
+
+.input--xxlarge {
+	width: 500px;
+}
+
+.input--xlarge {
+	width: 350px;
+}
+
+.input--large {
+	width: 250px;
+}
+
+.input--medium {
+	width: 150px;
+}
+
+.input-small {
+	width: 100px;
+}
+
+.input--mini {
+	width: 50px;
+}
+	
+
+/* Labels */
+[class^="label"] {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ddd;
+	border-bottom: 1px solid #ccc;
+	height: 30px;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 10px;
+	padding: 5px;
+}
+
+.label {
+	color: #777 !important;
+	}
+
+.label--blue {
+	background-color: #00acee;
+	border-bottom: 1px solid #32a1d1;
+}
+	
+.label--orange {
+	background-color: #faa226;
+	border-bottom: 2px solid #e19324;
+}
+	
+.label--red {
+	background-color: #d53d2c;
+	border-bottom: 2px solid #ba3526;
+}
+	
+.label--green {
+	background-color: #3dbb38;
+	border-bottom: 2px solid #329e2e;
+}
+	
+.label--black {
+	background-color: #303030;
+	border-bottom: 2px solid #181818;
+}
+
+
+/* Alert */
+
+[class^="alert"] {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 3px solid #ccc;
+	background-color: #ddd;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	min-height: 15px;
+	width:100%;
+	color: #fff;
+	border-radius: 2px;
+	line-height: 15px;
+	padding: 9px;
+}
+
+.alert {
+	color: #777 !important;
+	}
+
+.alert--success {
+	background-color: #3dbb38;
+	border-bottom: 3px solid #329e2e;
+}
+
+.alert--warning {
+	background-color: #faa226;
+	border-bottom: 3px solid #e19324;
+}
+	
+.alert--error {
+	background-color: #d53d2c;
+	border-bottom: 3px solid #ba3526;
+}
+
+[class^="alert"] .icon-white-cross {
+	cursor: pointer;
+	}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+	color: #555;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Images */
+
+[class^="image"] {
+	border: 1px solid #ddd;
+}
+
+.image--curved {
+	border-radius: 15px 15px 15px 15px;
+}
+	
+.image--circle {
+	border-radius: 90px 90px 90px 90px;
+}
+	
+.image--interactive {
+      -webkit-transition: .4s ease-in-out all;
+      -moz-transition: .4s ease-in-out all;
+      -ms-transition: .4s ease-in-out all;
+      -o-transition: .4s ease-in-out all;
+      transition: .4s ease-in-out all;
+}
+
+.image--interactive {
+	opacity: .7;
+}
+
+.image--interactive:hover {
+	opacity: .5;
+}
+
+.image--interactive:active {
+	opacity: .9;
+}
+	
+.image--reflect	{
+	-webkit-box-reflect: below 0
+    -webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(.7, transparent),to(white));
+}
+
+/* Progress Bar */
+.progress {
+	width: 500px;
+	height: 25px;
+	background-color: #efefef;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+[class^="progress__fill"] {
+	height: 100%;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+.progress__fill {
+	background-color: #ccc;
+}
+
+.progress__fill--blue {
+	background-color: #00acee;
+}
+
+.progress__fill--orange {
+	background-color: #faa226;
+}
+
+.progress__fill--red {
+	background-color: #d53d2c;
+}
+
+.progress__fill--green {
+	background-color: #3dbb38;
+}
+
+.progress__fill--black {
+	background-color: #333;
+}
+
+
+/* Misc */
+.left {
+	float: right;
+}
+
+.right {
+	float: right;
+}
