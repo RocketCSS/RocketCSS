@@ -116,13 +116,6 @@
 	background-color: #202020;
 	border-bottom: 2px solid #0e0e0e;
 }
-	
-.large {
-	height: 50px;
-	padding-left: 20px;
-	padding-right: 20px;
-	font-size: 25px;
-}
 
 /* Icons */
 
@@ -469,6 +462,21 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Misc */
+
+.large {
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 25px;
+}
+
+.medium {
+	height: 38px;
+	padding-left: 13px;
+	padding-right: 13px;
+	font-size: 16px;
+}
+
 .left {
 	float: right;
 }
