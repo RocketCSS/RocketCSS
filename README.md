@@ -3,6 +3,8 @@ RocketCSS
 
 Build your website with RocketCSS, a powerful CSS UI toolkit.
 
+Visit our website at: <a href="http://rocketcss.com">RocketCSS.com</a>
+
 RocketCSS is a very simple and easy to use CSS framework. We came up with the idea of RocketCSS when other CSS frameworks fell short of our expectations. We wanted to show you how easy and useful it can be when using our CSS framework.
 
 From website buttons to website icons, we have it all, our simple, smart, and elegant CSS framework make your website visually exciting and compel visitors to stay and interact.
