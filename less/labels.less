@@ -1,0 +1,33 @@
+[class^="label"] {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ddd;
+	border-bottom: 1px solid #ccc;
+	height: 30px;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 10px;
+	padding: 5px;
+	&.label {
+		color: #777;
+	}
+}
+.label--blue {
+	.build_label(@label--blue);
+}
+	
+.label--orange {
+	.build_label(@label--orange);
+}
+	
+.label--red {
+	.build_label(@label--red);
+}
+	
+.label--green {
+	.build_label(@label--green);
+}
+	
+.label--black {
+	.build_label(@label--black);
+}
+

@@ -1,0 +1,25 @@
+[class^="btn"] {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid #ccc;
+	height: 30px;
+	cursor: pointer;
+	padding: 3px 3px 3px 3px;
+	.build_button(@btn--default-text,@btn--default);
+}
+.btn--blue{
+	.build_button(@btn--blue-text,@btn--blue);
+}
+.btn--red{
+	.build_button(@btn--red-text,@btn--red);
+}
+.btn--orange{
+	.build_button(@btn--orange-text,@btn--orange);
+}
+.btn--green{
+	.build_button(@btn--green-text,@btn--green);
+}
+.btn--black{
+	.build_button(@btn--black-text,@btn--black);
+}

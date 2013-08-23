@@ -1,0 +1,30 @@
+[class^="image"] {
+	border: 1px solid #ddd;
+}
+
+.image--curved {
+	border-radius: 15px 15px 15px 15px;
+}
+	
+.image--circle {
+	border-radius: 90px 90px 90px 90px;
+}
+	
+.image--interactive {
+      -webkit-transition: .4s ease-in-out all;
+      -moz-transition: .4s ease-in-out all;
+      -ms-transition: .4s ease-in-out all;
+      -o-transition: .4s ease-in-out all;
+      transition: .4s ease-in-out all;
+      opacity: .7;
+      &hover{
+      	opacity: .5;
+      }
+      &active{
+      	opacity: .9
+      }
+}
+.image--reflect	{
+	-webkit-box-reflect: below 0
+    -webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(.7, transparent),to(white));
+}
