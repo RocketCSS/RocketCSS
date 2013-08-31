@@ -2,7 +2,7 @@
 // RocketCSS- Javascript Functions
 // For use with rocket.css
 // Licensed under The MIT License (MIT) 
-// http://rocketcss.com/license.txt
+// http://rocketcss.com/license/
 //
 
 //Progress Bar
