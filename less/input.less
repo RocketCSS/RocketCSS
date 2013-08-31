@@ -4,21 +4,24 @@
  * http://rocketcss.com/license.txt
  */
 
-[class^="input"] {
+[class^="input"],
+[class^="select"] {
 	border: 1px solid #ccc;
 	border-radius: 2px;
 	height: 19px;
 	padding: 5px;
 }
 	
-[class^="input"]:focus {
+[class^="input"]:focus,
+[class^="select"]:focus {
 	outline: none;
 	-moz-box-shadow: 0px 0px 3px #09C;
 	-webkit-box-shadow: 0px 0px 3px #09C;
 	box-shadow: 0px 0px 3px #09C;
 }
 
-[class^="input"] {
+[class^="input"],
+[class^="select"] {
 	font-family: Arial, Helvetica, sans-serif;
       -webkit-transition: .2s ease-in-out all;
       -moz-transition: .2s ease-in-out all;
@@ -28,21 +31,16 @@
 	border-radius: 2px;
 }
 	
-button {
-	font-family: Arial, Helvetica, sans-serif;
-      -webkit-transition: .2s ease-in-out all;
-      -moz-transition: .2s ease-in-out all;
-      -ms-transition: .2s ease-in-out all;
-      -o-transition: .2s ease-in-out all;
-      transition: .2s ease-in-out all;
-	border-radius: 2px;
+[class^="input"]:focus,
+[class^="select"]:focus {
 	outline: none;
 }
 
-[class^="input"]:focus {
-	outline: none;
+[class^="select"] {
+  background-color: #ffffff;
+  height: auto;
 }
-
+	
 .input--interactive {
 	width: 150px;
 }
