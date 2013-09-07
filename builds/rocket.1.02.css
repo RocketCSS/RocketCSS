@@ -41,6 +41,29 @@
 // Builds labels
 */
 /*
+ * RocketCSS - LESS
+ * Licensed under The MIT License (MIT) 
+ * http://rocketcss.com/license/
+ */
+.large {
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 25px;
+}
+.medium {
+  height: 38px;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-size: 16px;
+}
+.left {
+  float: right;
+}
+.right {
+  float: right;
+}
+/*
 // RocketCSS UI
 */
 /*
@@ -391,29 +414,6 @@ h5,
 h6 {
   color: #555;
   font-family: Arial, Helvetica, sans-serif;
-}
-/*
- * RocketCSS - LESS
- * Licensed under The MIT License (MIT) 
- * http://rocketcss.com/license/
- */
-.large {
-  height: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 25px;
-}
-.medium {
-  height: 38px;
-  padding-left: 13px;
-  padding-right: 13px;
-  font-size: 16px;
-}
-.left {
-  float: right;
-}
-.right {
-  float: right;
 }
 /*!
  * RocketCSS - LESS
