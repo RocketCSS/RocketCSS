@@ -1,6 +1,6 @@
 /*!
  * RocketCSS - LESS
- * Licensed under The MIT License (MIT) 
+ * Licensed under The MIT License (MIT)
  * http://rocketcss.com/license/
  */
 
@@ -8,68 +8,64 @@
 // RocketCSS Icons
 */
 
-[class^="icon-white-"] {
+/* Set the size of the icons */
+@icon-size: 16px;
+
+/* Base Icons Styles */
+[class^="icon-"] {
 	display: inline-block;
 	width: 15px;
 	height: 15px;
-	background: url(../imgs/icon-white.png) no-repeat;
 	margin-top: 1px;
 	vertical-align: text-top;
 }
 
-.icon-white-search {
-	background-position: -7px -7px;
-}
-
-.icon-white-document {
-	background-position: -36px -7px;
-}
-
-.icon-white-download {
-	background-position: -123px -7px;
-}
-
-.icon-white-tick {
-	background-position: -65px -7px;
-}
-
-.icon-white-cross {
-	background-position: -94px -7px;
-}
-
-.icon-white-profile {
-	background-position: -152px -7px;
-}
-
-.icon-white-plus {
-	background-position: -181px -7px;
-}
-
-.icon-white-minus {
-	background-position: -210px -7px;
+/* Icon Colors */
+[class^="icon-white-"] {
+  background: url(../imgs/icon-white.png) no-repeat;
 }
 
 [class^="icon-black-"] {
-	display: inline-block;
-	width: 15px;
-	height: 15px;
 	background: url(../imgs/icon-black.png) no-repeat;
-	margin-top: 1px;
-	vertical-align: text-top;
 }
 
+/* Icon Positions */
+.icon-white-search,
 .icon-black-search {
-	background-position: -7px -7px;
+	background-position: -(@icon-size * 1) 0;
 }
 
+.icon-white-document,
 .icon-black-document {
-	background-position: -36px -7px;
+	background-position: -(@icon-size * 2) 0;
 }
 
+.icon-white-download,
+.icon-black-download {
+	background-position: -(@icon-size * 3) 0;
+}
+
+.icon-white-tick,
 .icon-black-tick {
-	background-position: -65px -7px;
+	background-position: -(@icon-size * 4) 0;
 }
 
+.icon-white-cross,
 .icon-black-cross {
-	background-position: -94px -7px;
+	background-position: -(@icon-size * 5) 0;
+}
+
+.icon-white-profile,
+.icon-black-profile {
+	background-position: -(@icon-size * 6) 0;
+}
+
+.icon-white-plus,
+.icon-black-plus {
+	background-position: -(@icon-size * 7) 0;
+}
+
+.icon-white-minus,
+.icon-black-minus {
+	background-position: -(@icon-size * 8) 0;
 }
