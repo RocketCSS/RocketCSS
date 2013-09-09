@@ -1,0 +1,113 @@
+/************************************************************************************
+Mobile-first
+*************************************************************************************/
+
+body {
+display: block;
+margin: 0px;
+}
+
+.grid--cont {
+		width: 100%;
+		height:auto;
+	}
+	
+[class^="itm--"]{
+    	clear:both;
+    	width:100%;
+    	min-height:20px;	
+    	float:left;
+    }
+
+    		
+.ln{
+    	width:100%;
+    	clear:both;
+    	min-height:20px;
+    }
+    		
+
+/************************************************************************************
+larger than 960
+*************************************************************************************/
+@media screen and (min-width: 960px) {
+	.grid--cont {
+		width: 960px;
+	}
+	[class^="itm--"]{
+    	clear:none;
+    	width:auto;
+    }
+}
+
+/************************************************************************************
+iPad Portrait
+*************************************************************************************/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 960px) 
+and (orientation : portrait) {
+
+.grid--cont {
+		width: 100%;
+	}
+}
+
+/************************************************************************************
+All itm-- widths for non-mobile view
+*************************************************************************************/
+
+@media screen and (min-width: 960px), only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 960px) 
+and (orientation : portrait){
+			.itm--1{
+    			width:8.3333%;
+    		}
+    		
+    		.itm--2{
+    			width:16.6666%;
+    		}
+    		
+    		.itm--3{
+    			width:25%;
+    		}
+    		
+    		.itm--4{
+    			width:33.3333%;
+    		}
+    		
+    		.itm--5{
+    			width:41.6666%;
+    		}
+    		
+    		.itm--6{
+    			width:50%;
+    		}
+    		
+    		.itm--7{
+    			width:58.3333%;
+    		}
+    		
+    		.itm--8{
+    			width:66.6666%;
+    		}
+    		
+    		.itm--9{
+    			width:75%;
+    		}
+    		
+    		.itm--10{
+    			width:83.3333%;
+    		}
+    		
+    		.itm--11{
+    			width:91.6666%;
+    		}
+    		
+    		.itm--12{
+    			width:100%;
+    		}
+}
+
+
