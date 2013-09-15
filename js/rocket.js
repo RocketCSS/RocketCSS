@@ -15,6 +15,7 @@
 		animate: true,
 		duration: 500 
 	};
+	var target=$('[class^="progress"]', this)
 	//Allow for callback function
 	if (callback == undefined) { 
 		if ($.isFunction(options)) { 
@@ -34,10 +35,10 @@
 		ex = 1; //Let the user know the progress bar is 100% full.
 	};
 	if (options.animate) {
-		this.animate({width: val + "%" },options.duration,cb); //Gives a nice fill animation
+		target.animate({width: val + "%" },options.duration,cb); //Gives a nice fill animation
 	} else {
-		this.css("width", val + "%");
-		callback.call(this);
+		target.css("width", val + "%");
+		callback.call(cb);
 	}
 	return ex;
 }});
@@ -52,6 +53,7 @@ jQuery.fn.extend({
                 animate: true,
                 duration: 500
         };
+	var target=$('[class^="progress"]', this)
 	if (callback == undefined) {
                 if ($.isFunction(options)) {
                         var cb = options;
@@ -65,7 +67,7 @@ jQuery.fn.extend({
         }
 
         var options = $.extend(defaults,options);
-	var current = parseInt(this[0].style.width.replace("%","")); //Gets current position
+	var current = parseInt(target[0].style.width.replace("%","")); //Gets current position
 	val = parseInt(val);
 	val += current;
 	var ex = 0;
@@ -74,10 +76,10 @@ jQuery.fn.extend({
 		ex = 1; //Lets the user know if the progress bar is at 1005
         };
 	if (options.animate) {
-        	this.animate({width: val + "%" },options.duration,cb);        
+        	target.animate({width: val + "%" },options.duration,cb);        
         } else {
-                this.css("width", val + "%");
-		callback.call(this);
+                target.css("width", val + "%");
+		callback.call(cb);
         }
 	return ex;
 }});
@@ -86,7 +88,8 @@ jQuery.fn.extend({
 //Get Position
 //Returns current position of progress bar
 $.fn.getPos = function(){
-	var pos = parseInt(this[0].style.width.replace("%",""));
+	var target=$('[class^="progress"]', this)
+	var pos = parseInt(target[0].style.width.replace("%",""));
 	return pos;
 }
 
@@ -127,7 +130,7 @@ $.fn.status = function( stat ) {
 			animate: true,
 			direction: "up",
 			duration: 500,
-			animation: "fade",
+			animation: "slide",
 			html: ""
 		};
 		var ids = this.attr('id');
@@ -161,7 +164,7 @@ $.fn.status = function( stat ) {
 				classi="alert--error";
 				break;
 		}
-		this.attr('class',classi)
+		this.removeClass('alert alert--success alert--warning alert--error').addClass(classi);
 		if (options.animate) {
 			if (options.animation=="slide") {
 				this.show('slide',{direction: options.direction}, options.duration);
