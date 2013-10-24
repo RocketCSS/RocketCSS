@@ -12,6 +12,5 @@ From website buttons to website icons, we have it all, our simple, smart, and el
 Our team of astronauts constantly update RocketCSS based on your feedback. In the future, we wish to expand our team and make our CSS framework more responsive to calibrate with all devices. Our CSS framework utilize BEM syntaxes within our code markup, this makes it easier for developers to use.
 
 Contact:<br/>
-Email: info@rocketcss.com<br />
-Skype: rahulkhosla123 (project lead)
+Email: info@rocketcss.com
 
