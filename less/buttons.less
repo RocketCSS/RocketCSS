@@ -1,19 +1,19 @@
-/*
- * RocketCSS - LESS
- * Licensed under The MIT License (MIT) 
- * http://rocketcss.com/license/
- */
-
+/* Buttons */
 [class^="btn"] {
 	border-top: none;
 	border-left: none;
 	border-right: none;
 	border-bottom: 2px solid #ccc;
 	height: 30px;
+	color: #fff;
 	cursor: pointer;
 	padding: 3px 6px 3px 6px;
 	border-radius: 2px;
-        outline: none;
+	outline: none;
+	font-size: 14px;
+	line-height: 25px;
+	margin: 2px 0;
+	font-family: Arial, Helvetica, sans-serif;
         -webkit-transition: .2s ease-in-out all;
         -moz-transition: .2s ease-in-out all;
         -ms-transition: .2s ease-in-out all;
@@ -22,17 +22,17 @@
 	.build_button(@btn--default-text,@btn--default);
 }
 .btn--blue{
-	.build_button(@btn--blue-text,@btn--blue);
+	.build_button(@btn--blue);
 }
 .btn--red{
-	.build_button(@btn--red-text,@btn--red);
+	.build_button(@btn--red);
 }
 .btn--orange{
-	.build_button(@btn--orange-text,@btn--orange);
+	.build_button(@btn--orange);
 }
 .btn--green{
-	.build_button(@btn--green-text,@btn--green);
+	.build_button(@btn--green);
 }
 .btn--black{
-	.build_button(@btn--black-text,@btn--black);
+	.build_button(@btn--black);
 }
