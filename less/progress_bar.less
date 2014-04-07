@@ -1,43 +1,33 @@
-/*!
- * RocketCSS - LESS
- * Licensed under The MIT License (MIT) 
- * http://rocketcss.com/license/
- */
-
+/* Progress Bar */
 .progress {
-	width: 500px;
+	width: 100%;
 	height: 25px;
 	background-color: #efefef;
 	border: 1px solid #ddd;
 	border-radius: 5px;
 }
-[class^="progress__fill"] {
+[class^="progress__fill"], [class*="progress__fill"] {
 	height: 100%;
-	border-top-right-radius:5px;
-	border-bottom-right-radius:5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 	background-color: #ccc;
 	&.marquee {
-		border-top-left-radius:5px;
-		border-bottom-left-radius:5px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
 	}
 }
-
 .progress__fill--blue {
 	background-color: #00acee !important;
 }
-
 .progress__fill--orange {
 	background-color: #faa226 !important;
 }
-
 .progress__fill--red {
 	background-color: #d53d2c !important;
 }
-
 .progress__fill--green {
 	background-color: #3dbb38 !important;
 }
-
 .progress__fill--black {
 	background-color: #333 !important;
 }
