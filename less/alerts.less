@@ -1,9 +1,4 @@
-/*
- * RocketCSS - LESS
- * Licensed under The MIT License (MIT) 
- * http://rocketcss.com/license/
- */
-
+/* Alerts */
 [class^="alert"] {
 	border-top: none;
 	border-left: none;
@@ -11,30 +6,26 @@
 	border-bottom: 3px solid #ccc;
 	background-color: #ddd;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 14px;
 	min-height: 15px;
-	width:100%;
-	color: #FFF;
+	width: 100%;
+	color: #fff;
 	border-radius: 2px;
 	line-height: 15px;
 	padding: 9px;
 	&.alert {
-		color: #777;
+		color: #777 !important;
 	}
-	>.icon-white-cross,
-	>.close {
+	>.icon--close {
 		cursor: pointer;
 	}
 }
-
 .alert--success {
 	.build_alert(@alert--success);
 }
-
 .alert--warning {
 	.build_alert(@alert--warning);
 }
-	
 .alert--error {
 	.build_alert(@alert--error);
 }
