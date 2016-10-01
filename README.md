@@ -1,4 +1,4 @@
-RocketCSS
+This project is no longer maintained.
 =========
 
 Build your website with RocketCSS, a powerful CSS UI toolkit.
@@ -13,4 +13,3 @@ Our team of astronauts constantly update RocketCSS based on your feedback. In th
 
 Contact:<br/>
 Email: info@rocketcss.com
-
