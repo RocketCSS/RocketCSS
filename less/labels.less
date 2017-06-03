@@ -1,29 +1,27 @@
-/* Labels */
+.less-label(@color) {
+	color: #FFFFFF;
+	background-color: @color;
+  	border-color: darken(@color,12%);
+}
 [class^="label"], [class*="label"] {
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: #ddd;
-	border-bottom: 1px solid #ccc;
-	height: 30px;
-	color: #fff;
-	border-radius: 5px;
-	font-size: 14px;
-	padding: 5px;
-	&.label {
-		color: #777;
-	}
+	padding: @font_lineheight/4;
 }
-.label--blue {
-	.build_label(@label--blue);
+.label {
+	.less-label(@color-default);
+	color: @color-black !important;
 }
-.label--orange {
-	.build_label(@label--orange);
+.label-blue {
+	.less-label(@color-blue);
 }
-.label--red {
-	.build_label(@label--red);
+.label-orange {
+	.less-label(@color-orange);
 }
-.label--green {
-	.build_label(@label--green);
+.label-red {
+	.less-label(@color-red);
 }
-.label--black {
-	.build_label(@label--black);
+.label-green {
+	.less-label(@color-green);
+}
+.label-black {
+	.less-label(@color-black);
 }

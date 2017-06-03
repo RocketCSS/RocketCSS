@@ -1,0 +1,40 @@
+.less-progress(@color) {
+	background-color: @color;
+}
+.progress {
+	border-radius: @border_radius;
+	background-color: lighten(@color-default,6%);
+    -webkit-box-sizing: content-box;
+	box-border: content-box;
+}
+[class^="progress_fill"], [class*="progress_fill"] {
+	min-height: @font_lineheight;
+	color: lighten(@color-default,12%);
+	font-family: @font_family;
+	font-size: @font_size;
+	line-height: @font_lineheight;
+	text-align: center;
+  	padding: @font_lineheight/2;
+	border-top-right-radius: @border_radius;
+	border-bottom-right-radius: @border_radius;
+	&.marquee {
+		border-top-left-radius: @border_radius;
+		border-bottom-left-radius: @border_radius;
+	}
+	.less-progress(@color-default);
+}
+.progress_fill-blue {
+	.less-progress(@color-blue);
+}
+.progress_fill-green {
+	.less-progress(@color-green);
+}
+.progress_fill-orange {
+	.less-progress(@color-orange);
+}
+.progress_fill-red {
+	.less-progress(@color-red);
+}
+.progress_fill-black {
+	.less-progress(@color-black);
+}

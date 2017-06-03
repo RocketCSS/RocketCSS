@@ -1,38 +1,38 @@
-/* Buttons */
+.less-btn(@color) {
+  color: #FFFFFF;
+  background-color: @color;
+  border-color: darken(@color,12%);
+    &:hover {
+      background-color: darken(@color,6%);
+    }
+    &:focus,
+    &:active {
+      background-color: darken(@color,12%);
+    }
+}
 [class^="btn"] {
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: 2px solid #ccc;
-	height: 30px;
-	color: #fff;
+  padding: @font_lineheight/2 @font_lineheight;
 	cursor: pointer;
-	padding: 3px 6px 3px 6px;
-	border-radius: 2px;
-	outline: none;
-	font-size: 14px;
-	line-height: 25px;
-	margin: 2px 0;
-	font-family: Arial, Helvetica, sans-serif;
-        -webkit-transition: .2s ease-in-out all;
-        -moz-transition: .2s ease-in-out all;
-        -ms-transition: .2s ease-in-out all;
-        -o-transition: .2s ease-in-out all;
-        transition: .2s ease-in-out all;
-	.build_button(@btn--default-text,@btn--default);
+  &:disabled {
+    text-decoration: line-through;
+  }
 }
-.btn--blue{
-	.build_button(@btn--blue);
+.btn {
+  .less-btn(@color-default);
+  color: @color-black !important;
 }
-.btn--red{
-	.build_button(@btn--red);
+.btn-blue {
+	.less-btn(@color-blue);
 }
-.btn--orange{
-	.build_button(@btn--orange);
+.btn-green {
+	.less-btn(@color-green);
 }
-.btn--green{
-	.build_button(@btn--green);
+.btn-orange {
+	.less-btn(@color-orange);
 }
-.btn--black{
-	.build_button(@btn--black);
+.btn-red {
+	.less-btn(@color-red);
+}
+.btn-black {
+	.less-btn(@color-black);
 }

@@ -1,0 +1,81 @@
+.less-action_typography__underline(@color) {
+	&:after {
+		background-color: @color;
+	}
+}
+[class^="action_typography__underline"] {
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	border-color: @color-default;
+	padding: 0 0 @font_lineheight/2 0;
+	position: relative;
+	&:after {
+		content: '';
+		height: @border_width;
+		position: absolute;
+		bottom: -@border_width;
+		left: 0;
+	}
+}
+.action_typography__underline {
+	.less-action_typography__underline(@color-default);
+}
+.action_typography__underline-blue {
+	.less-action_typography__underline(@color-blue);
+}
+.action_typography__underline-green {
+	.less-action_typography__underline(@color-green);
+}
+.action_typography__underline-orange {
+	.less-action_typography__underline(@color-orange);
+}
+.action_typography__underline-red {
+	.less-action_typography__underline(@color-red);
+}
+.action_typography__underline-black {
+	.less-action_typography__underline(@color-black);
+}
+h1[class^="action_typography__underline"]:after {
+	width: 16.66%*6;
+}
+h2[class^="action_typography__underline"]:after {
+	width: 16.66%*5;
+}
+h3[class^="action_typography__underline"]:after {
+	width: 16.66%*4;
+}
+h4[class^="action_typography__underline"]:after {
+	width: 16.66%*3;
+}
+h5[class^="action_typography__underline"]:after {
+	width: 16.66%*2;
+}
+h6[class^="action_typography__underline"]:after {
+	width: 16.66%*1;
+}
+.action_size-big {
+	font-size: @font_size*1.5 !important;
+}
+.action_expand-width {
+	&:focus {
+		width: 100%;
+	}
+}
+.action_move-left {
+	float: left;
+	text-align: left;
+}
+.action_move-right {
+	float: right;
+	text-align: right;
+}
+.action_move-center {
+	margin: 0 auto;
+	text-align: center;
+}
+.action_move-justify {
+	text-align: justify;
+}
+.action_effect-reflect {
+	-webkit-box-reflect: below 0 -webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(.7, transparent),to(rgba(255, 255, 255, 0.5)));
+}
