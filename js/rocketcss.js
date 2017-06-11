@@ -91,16 +91,16 @@ $.fn.status = function( stat ) {
 			clas="input";
 			break;
 		case "success":
-			clas="input--success";
+			clas="input-green";
 			break;
 		case "warning":
-			clas="input--warning";
+			clas="input-orange";
 			break;
 		case "error":
-			clas="input--error";
+			clas="input-red";
 			break;
 		}
-	this.removeClass('input--error input--warning input--success').addClass(clas);
+	this.removeClass('input-red input-orange input-green').addClass(clas);
 	return 0;
 };
 
@@ -137,16 +137,16 @@ $.fn.status = function( stat ) {
 				classi="alert";
 				break;
 			case "success":
-				classi="alert--success";
+				classi="alert-green";
 				break;
 			case "warning":
-				classi="alert--warning";
+				classi="alert-orange";
 				break;
 			case "error":
-				classi="alert--error";
+				classi="alert-red";
 				break;
 		}
-		this.removeClass('alert alert--success alert--warning alert--error').addClass(classi);
+		this.removeClass('alert alert-green alert-orange alert-red').addClass(classi);
 		if (options.animate) {
 			if (options.animation=="slide") {
 				this.show('slide',{direction: options.direction}, options.duration);
