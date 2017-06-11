@@ -1590,7 +1590,7 @@ h6 {
 [class^="alert"] {
   padding: 0.75em;
 }
-[class^="alert"] > .icon--close {
+[class^="alert"] > .icon-close {
   cursor: pointer;
   line-height: 1.5em;
 }
