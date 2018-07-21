@@ -10,7 +10,7 @@ Our team of astronauts constantly update RocketCSS based on your feedback. In th
 RocketCSS framework utilize comprehensive syntaxes within its code markup; making it easier for developers to use.
 
 Contact:<br/>
-Twitter: <a href="//twitter.com/RocketCSS" target="_blank" title="Twitter">@RocketCSS</a>
+Twitter: <a href="//twitter.com/RocketCSS" target="_blank" title="Twitter">@RocketCSS</a><br />
 Email: <a href="mailto:support@wpza.net">click here</a>
 
 Note: RocketCSS is no longer actively maintained.
